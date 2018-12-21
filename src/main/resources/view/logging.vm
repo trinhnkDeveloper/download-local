@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logging</title>
+        <meta charset="UTF-8">
+        <meta name="decorator" content="atl.general">
+        #requireResource("jp.kodnet.plugins.logging.logger:logger-resources")
+    </head>
+    <body>
+        <h1>Log files</h1>
+        <div>
+            #foreach($value in $action.files)
+            <a href="dodownload.action?uri=$value" target="_blank">$value</a><br>
+            #end
+        </div>
+    </body>
+</html>
+
